@@ -16,7 +16,7 @@
 
 ## Overview
 
-The app uses mDNS to automatically discover other libp2p peers on the same Local Area Netowork (LAN). Once discovered, you can begin a message thread with them similar to the Messages app.
+The app uses mDNS to automatically discover other libp2p peers on the same Local Area Network (LAN). Once discovered, you can begin a message thread with them similar to the Messages app.
 
 ## Why?
 
