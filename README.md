@@ -8,7 +8,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Why?](#why?)
+- [Why?](#why)
 - [Try it out](#try-it-out)
 - [Contributing](#contributing)
 - [Credits](#credits)
@@ -24,7 +24,34 @@ It's an example of how you can integrate swift-libp2p into an iOS App! 🥳
 
 ## Try it out
 
-Check it out by cloning this repo, opening in XCode and setting the appropriate developer signing settings, then run it on two devices connected to the same LAN!
+Check it out by...
+
+1) Cloning this repo
+
+2) Create an new iOS Project
+   1) XCode -> File -> New -> Project
+   2) Select iOS -> App
+   3) Give it a Product Name of 'LibP2PChatExample'
+   4) Make sure you select
+      - Interface -> SwiftUI
+      - Language -> Swift
+      - Uncheck -> Use Core Data
+      - Uncheck -> Include Tests
+
+3) Drag and drop the directories and files from this repo into your new project. 
+
+4) Include the swift package dependencies by clicking on your project at the top of the navigator.
+   - Include the following packages:
+      - https://github.com/swift-libp2p/swift-libp2p
+      - https://github.com/swift-libp2p/swift-libp2p-noise
+      - https://github.com/swift-libp2p/swift-libp2p-mplex
+      - https://github.com/swift-libp2p/swift-libp2p-mdns
+
+5) Select an iOS Simulator to run the app on. 
+
+6) Build and Run the Project!
+
+7) Run the app on two devices connected to the same LAN and they should discover one another within a few seconds and a chat dialog will become available!
 
 ## Contributing
 
