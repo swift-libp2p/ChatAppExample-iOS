@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA3C5405286A2BC2001E1858 /* LibP2PChatExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5404286A2BC2001E1858 /* LibP2PChatExampleApp.swift */; };
+		CA3C5409286A2BC2001E1858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3C5408286A2BC2001E1858 /* Assets.xcassets */; };
+		CA3C540C286A2BC2001E1858 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3C540B286A2BC2001E1858 /* Preview Assets.xcassets */; };
+		CA3C541F286A2BEF001E1858 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5413286A2BEF001E1858 /* ChatModel.swift */; };
+		CA3C5420286A2BEF001E1858 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5414286A2BEF001E1858 /* ViewModel.swift */; };
+		CA3C5422286A2BEF001E1858 /* LocalNetworkAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5417286A2BEF001E1858 /* LocalNetworkAuthorization.swift */; };
+		CA3C5423286A2BEF001E1858 /* LibP2PService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5418286A2BEF001E1858 /* LibP2PService.swift */; };
+		CA3C5424286A2BEF001E1858 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C541A286A2BEF001E1858 /* SettingsView.swift */; };
+		CA3C5425286A2BEF001E1858 /* PeerIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C541B286A2BEF001E1858 /* PeerIconView.swift */; };
+		CA3C5426286A2BEF001E1858 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C541C286A2BEF001E1858 /* ChatView.swift */; };
+		CA3C5427286A2BEF001E1858 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C541D286A2BEF001E1858 /* ContentView.swift */; };
+		CA3C5428286A2BEF001E1858 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C541E286A2BEF001E1858 /* ChatRow.swift */; };
+		CA3C542B286A2C24001E1858 /* LibP2P in Frameworks */ = {isa = PBXBuildFile; productRef = CA3C542A286A2C24001E1858 /* LibP2P */; };
+		CA3C542E286A2C3C001E1858 /* LibP2PNoise in Frameworks */ = {isa = PBXBuildFile; productRef = CA3C542D286A2C3C001E1858 /* LibP2PNoise */; };
+		CA3C5431286A2C4F001E1858 /* LibP2PMPLEX in Frameworks */ = {isa = PBXBuildFile; productRef = CA3C5430286A2C4F001E1858 /* LibP2PMPLEX */; };
+		CA3C5434286A2C5F001E1858 /* LibP2PMDNS in Frameworks */ = {isa = PBXBuildFile; productRef = CA3C5433286A2C5F001E1858 /* LibP2PMDNS */; };
+		CA3C5436286A3264001E1858 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA3C5435286A3264001E1858 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA3C5401286A2BC2001E1858 /* LibP2PChatExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibP2PChatExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3C5404286A2BC2001E1858 /* LibP2PChatExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibP2PChatExampleApp.swift; sourceTree = "<group>"; };
+		CA3C5408286A2BC2001E1858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA3C540B286A2BC2001E1858 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA3C5413286A2BEF001E1858 /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		CA3C5414286A2BEF001E1858 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CA3C5417286A2BEF001E1858 /* LocalNetworkAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNetworkAuthorization.swift; sourceTree = "<group>"; };
+		CA3C5418286A2BEF001E1858 /* LibP2PService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibP2PService.swift; sourceTree = "<group>"; };
+		CA3C541A286A2BEF001E1858 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CA3C541B286A2BEF001E1858 /* PeerIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerIconView.swift; sourceTree = "<group>"; };
+		CA3C541C286A2BEF001E1858 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		CA3C541D286A2BEF001E1858 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA3C541E286A2BEF001E1858 /* ChatRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		CA3C5435286A3264001E1858 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA3C53FE286A2BC2001E1858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3C5431286A2C4F001E1858 /* LibP2PMPLEX in Frameworks */,
+				CA3C5434286A2C5F001E1858 /* LibP2PMDNS in Frameworks */,
+				CA3C542E286A2C3C001E1858 /* LibP2PNoise in Frameworks */,
+				CA3C542B286A2C24001E1858 /* LibP2P in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA3C53F8286A2BC2001E1858 = {
+			isa = PBXGroup;
+			children = (
+				CA3C5435286A3264001E1858 /* README.md */,
+				CA3C5403286A2BC2001E1858 /* LibP2PChatExample */,
+				CA3C5402286A2BC2001E1858 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA3C5402286A2BC2001E1858 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C5401286A2BC2001E1858 /* LibP2PChatExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA3C5403286A2BC2001E1858 /* LibP2PChatExample */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C5412286A2BEF001E1858 /* Models */,
+				CA3C5416286A2BEF001E1858 /* Services */,
+				CA3C5419286A2BEF001E1858 /* Views */,
+				CA3C5404286A2BC2001E1858 /* LibP2PChatExampleApp.swift */,
+				CA3C5408286A2BC2001E1858 /* Assets.xcassets */,
+				CA3C540A286A2BC2001E1858 /* Preview Content */,
+			);
+			path = LibP2PChatExample;
+			sourceTree = "<group>";
+		};
+		CA3C540A286A2BC2001E1858 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C540B286A2BC2001E1858 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA3C5412286A2BEF001E1858 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C5413286A2BEF001E1858 /* ChatModel.swift */,
+				CA3C5414286A2BEF001E1858 /* ViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA3C5416286A2BEF001E1858 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C5417286A2BEF001E1858 /* LocalNetworkAuthorization.swift */,
+				CA3C5418286A2BEF001E1858 /* LibP2PService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA3C5419286A2BEF001E1858 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C541A286A2BEF001E1858 /* SettingsView.swift */,
+				CA3C541B286A2BEF001E1858 /* PeerIconView.swift */,
+				CA3C541C286A2BEF001E1858 /* ChatView.swift */,
+				CA3C541D286A2BEF001E1858 /* ContentView.swift */,
+				CA3C541E286A2BEF001E1858 /* ChatRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA3C5400286A2BC2001E1858 /* LibP2PChatExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3C540F286A2BC2001E1858 /* Build configuration list for PBXNativeTarget "LibP2PChatExample" */;
+			buildPhases = (
+				CA3C53FD286A2BC2001E1858 /* Sources */,
+				CA3C53FE286A2BC2001E1858 /* Frameworks */,
+				CA3C53FF286A2BC2001E1858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibP2PChatExample;
+			packageProductDependencies = (
+				CA3C542A286A2C24001E1858 /* LibP2P */,
+				CA3C542D286A2C3C001E1858 /* LibP2PNoise */,
+				CA3C5430286A2C4F001E1858 /* LibP2PMPLEX */,
+				CA3C5433286A2C5F001E1858 /* LibP2PMDNS */,
+			);
+			productName = LibP2PChatExample;
+			productReference = CA3C5401286A2BC2001E1858 /* LibP2PChatExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA3C53F9286A2BC2001E1858 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CA3C5400286A2BC2001E1858 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CA3C53FC286A2BC2001E1858 /* Build configuration list for PBXProject "LibP2PChatExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA3C53F8286A2BC2001E1858;
+			packageReferences = (
+				CA3C5429286A2C24001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p" */,
+				CA3C542C286A2C3C001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-noise" */,
+				CA3C542F286A2C4F001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-mplex" */,
+				CA3C5432286A2C5F001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */,
+			);
+			productRefGroup = CA3C5402286A2BC2001E1858 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA3C5400286A2BC2001E1858 /* LibP2PChatExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA3C53FF286A2BC2001E1858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3C5436286A3264001E1858 /* README.md in Resources */,
+				CA3C540C286A2BC2001E1858 /* Preview Assets.xcassets in Resources */,
+				CA3C5409286A2BC2001E1858 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA3C53FD286A2BC2001E1858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3C5422286A2BEF001E1858 /* LocalNetworkAuthorization.swift in Sources */,
+				CA3C5423286A2BEF001E1858 /* LibP2PService.swift in Sources */,
+				CA3C5425286A2BEF001E1858 /* PeerIconView.swift in Sources */,
+				CA3C5405286A2BC2001E1858 /* LibP2PChatExampleApp.swift in Sources */,
+				CA3C5426286A2BEF001E1858 /* ChatView.swift in Sources */,
+				CA3C5427286A2BEF001E1858 /* ContentView.swift in Sources */,
+				CA3C5424286A2BEF001E1858 /* SettingsView.swift in Sources */,
+				CA3C5420286A2BEF001E1858 /* ViewModel.swift in Sources */,
+				CA3C5428286A2BEF001E1858 /* ChatRow.swift in Sources */,
+				CA3C541F286A2BEF001E1858 /* ChatModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA3C540D286A2BC2001E1858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA3C540E286A2BC2001E1858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA3C5410286A2BC2001E1858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LibP2PChatExample/Preview Content\"";
+				DEVELOPMENT_TEAM = EF4K9WDULC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandontoms.LibP2PChatExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA3C5411286A2BC2001E1858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LibP2PChatExample/Preview Content\"";
+				DEVELOPMENT_TEAM = EF4K9WDULC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandontoms.LibP2PChatExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA3C53FC286A2BC2001E1858 /* Build configuration list for PBXProject "LibP2PChatExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3C540D286A2BC2001E1858 /* Debug */,
+				CA3C540E286A2BC2001E1858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3C540F286A2BC2001E1858 /* Build configuration list for PBXNativeTarget "LibP2PChatExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3C5410286A2BC2001E1858 /* Debug */,
+				CA3C5411286A2BC2001E1858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA3C5429286A2C24001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+		CA3C542C286A2C3C001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-noise" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p-noise.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		CA3C542F286A2C4F001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-mplex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p-mplex.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+		CA3C5432286A2C5F001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p-mdns.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA3C542A286A2C24001E1858 /* LibP2P */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA3C5429286A2C24001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p" */;
+			productName = LibP2P;
+		};
+		CA3C542D286A2C3C001E1858 /* LibP2PNoise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA3C542C286A2C3C001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-noise" */;
+			productName = LibP2PNoise;
+		};
+		CA3C5430286A2C4F001E1858 /* LibP2PMPLEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA3C542F286A2C4F001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-mplex" */;
+			productName = LibP2PMPLEX;
+		};
+		CA3C5433286A2C5F001E1858 /* LibP2PMDNS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA3C5432286A2C5F001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */;
+			productName = LibP2PMDNS;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CA3C53F9286A2BC2001E1858 /* Project object */;
+}
