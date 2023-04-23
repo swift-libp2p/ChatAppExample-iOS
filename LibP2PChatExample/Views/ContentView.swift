@@ -5,14 +5,14 @@
 //  Created by Brandon Toms on 5/28/22.
 //
 
-import SwiftUI
 import LibP2P
+import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var viewModel:ViewModel
-    @State var isServiceRunning:Bool = false
-    @State var chatSelected:Chat? = nil
-    
+    @EnvironmentObject var viewModel: ViewModel
+    @State var isServiceRunning: Bool = false
+    @State var chatSelected: Chat? = nil
+
     var body: some View {
         NavigationView {
             VStack {
@@ -21,7 +21,7 @@ struct ContentView: View {
                         if viewModel.chats.isEmpty {
                             Text("No Peers")
                         } else {
-                            ForEach(viewModel.chats.filter({$0.peer.isActive})) { chat in
+                            ForEach(viewModel.chats.filter({ $0.peer.isActive })) { chat in
                                 NavigationLink(destination: {
                                     ChatView(chat: chat)
                                         .environmentObject(viewModel)
@@ -29,7 +29,7 @@ struct ContentView: View {
                                     ChatRow(chat: chat)
                                 }
                             }
-                            ForEach(viewModel.chats.filter({!$0.peer.isActive})) { chat in
+                            ForEach(viewModel.chats.filter({ !$0.peer.isActive })) { chat in
                                 NavigationLink(destination: {
                                     ChatView(chat: chat)
                                         .environmentObject(viewModel)
@@ -47,7 +47,9 @@ struct ContentView: View {
                     .onChange(of: isServiceRunning) { newValue in
                         if newValue {
                             print("Attempting to start service")
-                            Task { await viewModel.startP2PService() }
+                            Task.detached(priority: .background) {
+                                await viewModel.startP2PService()
+                            }
                         } else {
                             print("Attempting to stop service")
                             viewModel.stopP2PService()
@@ -62,13 +64,12 @@ struct ContentView: View {
                     Image(systemName: "gear")
                 }
             }
-            
         }
     }
-    
+
     func delete(at offsets: IndexSet) {
-        /// TODO: Ensure the peer isn't active. If so disconnect
-        viewModel.chats.remove(atOffsets: offsets)
+        // TODO: Ensure the peer isn't active. If so disconnect
+        self.viewModel.chats.remove(atOffsets: offsets)
     }
 }
 
@@ -78,6 +79,3 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(ViewModel())
     }
 }
-
-
-
