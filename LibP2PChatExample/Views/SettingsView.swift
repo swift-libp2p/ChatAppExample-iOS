@@ -83,7 +83,7 @@ struct SettingsView: View {
                 HStack {
                     Text("Version")
                     Spacer()
-                    Text("0.1.0")
+                    Text("0.1.1")
                 }
                 Link(
                     destination: URL(string: "https://github.com/swift-libp2p")!,
