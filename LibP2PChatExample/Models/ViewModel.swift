@@ -105,12 +105,10 @@ class ViewModel:ObservableObject, ChatDelegate {
     
     private func onChatBuddyLeft(peer:PeerID) {
         Task {
-            if await !p2pService.isConnectedTo(peer: peer) {
-                DispatchQueue.main.async {
-                    print("Chat Buddy Left")
-                    if let index = self.chats.firstIndex(where: { $0.peer.peer == peer }) {
-                        self.chats[index].peer.isActive = false
-                    }
+            DispatchQueue.main.async {
+                print("Chat Buddy Left")
+                if let index = self.chats.firstIndex(where: { $0.peer.peer == peer }) {
+                    self.chats[index].peer.isActive = false
                 }
             }
         }
