@@ -34,7 +34,7 @@ struct ChatView: View {
                                 .font(.caption)
                             }
                         ) {
-                            getMessageView(viewWidth: geoProxy.size.width)
+                            MessageView(viewWidth: geoProxy.size.width)
                                 .padding(.horizontal)
                                 .onChange(of: chat.messages) { _ in
                                     if let msgID = chat.messages.last?.id {
@@ -99,7 +99,7 @@ struct ChatView: View {
     
     let columns = [GridItem(.flexible(minimum: 10))]
     
-    func getMessageView(viewWidth: CGFloat) -> some View {
+    func MessageView(viewWidth: CGFloat) -> some View {
         LazyVGrid(columns: columns, spacing: 0) {
             ForEach(chat.messages) { message in
                 let isReceived = message.type == .received
