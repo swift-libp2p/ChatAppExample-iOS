@@ -1,8 +1,6 @@
 .DS_Store
 /.build
 /Packages
-/*.xcodeproj
 xcuserdata/
 .swiftpm/
 Package.resolved
-LibP2PChatExample.xcodeproj/
