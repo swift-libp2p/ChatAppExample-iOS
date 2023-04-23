@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		95394E6029F2F4F8009A74DF /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95394E5F29F2F4F8009A74DF /* Routes.swift */; };
 		95394E6829F45781009A74DF /* LibP2P in Frameworks */ = {isa = PBXBuildFile; productRef = 95394E6729F45781009A74DF /* LibP2P */; };
-		95D36BC92908654000B45403 /* LibP2PMDNS in Frameworks */ = {isa = PBXBuildFile; productRef = 95D36BC82908654000B45403 /* LibP2PMDNS */; };
+		95D22A7329F5E87400DF98C7 /* LibP2PMDNS in Frameworks */ = {isa = PBXBuildFile; productRef = 95D22A7229F5E87400DF98C7 /* LibP2PMDNS */; };
 		CA3C5405286A2BC2001E1858 /* LibP2PChatExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5404286A2BC2001E1858 /* LibP2PChatExampleApp.swift */; };
 		CA3C5409286A2BC2001E1858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3C5408286A2BC2001E1858 /* Assets.xcassets */; };
 		CA3C540C286A2BC2001E1858 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3C540B286A2BC2001E1858 /* Preview Assets.xcassets */; };
@@ -45,7 +45,6 @@
 		CA3C5435286A3264001E1858 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CA55D76A29085FB4007B8F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CA55D76B290860A5007B8F2D /* LibP2PChatExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LibP2PChatExample.entitlements; sourceTree = "<group>"; };
-		CAAA74CC290858E200F8F78D /* swift-libp2p-mdns */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-libp2p-mdns"; path = "../../swift-libp2p/swift-libp2p-mdns"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3C5431286A2C4F001E1858 /* LibP2PMPLEX in Frameworks */,
-				95D36BC92908654000B45403 /* LibP2PMDNS in Frameworks */,
+				95D22A7329F5E87400DF98C7 /* LibP2PMDNS in Frameworks */,
 				CA3C542E286A2C3C001E1858 /* LibP2PNoise in Frameworks */,
 				95394E6829F45781009A74DF /* LibP2P in Frameworks */,
 			);
@@ -66,7 +65,6 @@
 		CA3C53F8286A2BC2001E1858 = {
 			isa = PBXGroup;
 			children = (
-				CAAA74CA2908574900F8F78D /* Packages */,
 				CA3C5435286A3264001E1858 /* README.md */,
 				CA3C5403286A2BC2001E1858 /* LibP2PChatExample */,
 				CA3C5402286A2BC2001E1858 /* Products */,
@@ -143,14 +141,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CAAA74CA2908574900F8F78D /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				CAAA74CC290858E200F8F78D /* swift-libp2p-mdns */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,8 +160,8 @@
 			packageProductDependencies = (
 				CA3C542D286A2C3C001E1858 /* LibP2PNoise */,
 				CA3C5430286A2C4F001E1858 /* LibP2PMPLEX */,
-				95D36BC82908654000B45403 /* LibP2PMDNS */,
 				95394E6729F45781009A74DF /* LibP2P */,
+				95D22A7229F5E87400DF98C7 /* LibP2PMDNS */,
 			);
 			productName = LibP2PChatExample;
 			productReference = CA3C5401286A2BC2001E1858 /* LibP2PChatExample.app */;
@@ -205,6 +195,7 @@
 				CA3C542C286A2C3C001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-noise" */,
 				CA3C542F286A2C4F001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-mplex" */,
 				95394E6629F45781009A74DF /* XCRemoteSwiftPackageReference "swift-libp2p" */,
+				95D22A7129F5E87400DF98C7 /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */,
 			);
 			productRefGroup = CA3C5402286A2BC2001E1858 /* Products */;
 			projectDirPath = "";
@@ -456,8 +447,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p";
 			requirement = {
-				branch = dev;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.11;
+			};
+		};
+		95D22A7129F5E87400DF98C7 /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p-mdns.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
 			};
 		};
 		CA3C542C286A2C3C001E1858 /* XCRemoteSwiftPackageReference "swift-libp2p-noise" */ = {
@@ -484,8 +483,9 @@
 			package = 95394E6629F45781009A74DF /* XCRemoteSwiftPackageReference "swift-libp2p" */;
 			productName = LibP2P;
 		};
-		95D36BC82908654000B45403 /* LibP2PMDNS */ = {
+		95D22A7229F5E87400DF98C7 /* LibP2PMDNS */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 95D22A7129F5E87400DF98C7 /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */;
 			productName = LibP2PMDNS;
 		};
 		CA3C542D286A2C3C001E1858 /* LibP2PNoise */ = {
