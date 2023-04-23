@@ -55,6 +55,7 @@ struct ContentView: View {
                             viewModel.stopP2PService()
                         }
                     }
+                    .disabled(!viewModel.isReady)
             }
             .navigationTitle("Chats")
             .toolbar {
@@ -63,6 +64,7 @@ struct ContentView: View {
                 }) {
                     Image(systemName: "gear")
                 }
+                .disabled(!viewModel.isReady)
             }
         }
     }
