@@ -34,13 +34,22 @@ public class LocalNetworkAuthorization: NSObject {
             switch newState {
             case .failed(let error):
                 print(error.localizedDescription)
-            case .ready, .cancelled:
+                self.reset()
+                self.completion?(false)
+            case .ready:
+                print("LNP ready")
+                self.completion?(true)
+            case .cancelled:
+                print("LNP cancelled")
+                self.reset()
+                self.completion?(false)
                 break
             case let .waiting(error):
                 print("Local network permission has been denied: \(error)")
                 self.reset()
                 self.completion?(false)
             default:
+                print("LNP default \(newState)")
                 break
             }
         }
