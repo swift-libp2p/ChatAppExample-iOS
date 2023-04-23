@@ -9,6 +9,7 @@ import LibP2P
 import SwiftUI
 
 class ViewModel: ObservableObject, ChatDelegate {
+    @Published var isReady:Bool = false
     @Published var groups: [String]
     @Published var chats: [Chat]
 
@@ -37,7 +38,7 @@ class ViewModel: ObservableObject, ChatDelegate {
 
         // Instantiate our LibP2PService on a background thread to prevent QOS inversion warnings
         // - Note: there's a brief moment where our p2pService is nil, the forced unwrapping of it could cause a crash...
-        Task(priority: .background) {
+        Task(priority: .medium) {
             // Grab a shared instance of our LibP2PService
             self.p2pService = LibP2PService.shared
 
@@ -62,6 +63,11 @@ class ViewModel: ObservableObject, ChatDelegate {
                 print("App dismissed, saving chats and shutting down libp2p")
                 self.saveChats()
                 self.p2pService.stop()
+            }
+            
+            // Let our UI know that the libp2p service has initialized (this enables the settings icon and start/stop toggle)
+            DispatchQueue.main.async {
+                self.isReady = true
             }
         }
     }
