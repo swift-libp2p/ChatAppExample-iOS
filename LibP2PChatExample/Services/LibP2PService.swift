@@ -177,7 +177,7 @@ class LibP2PService {
                     switch connectedness {
                     case .Connected:
                         return (peerID, self.app.identify.ping(peer: try! PeerID(cid: peerID)).always { result in
-                            self.app.logger.notice("Ping Result: \(result)")
+                            self.app.logger.debug("Ping Result: \(result)")
                         })
                     default:
                         return nil
