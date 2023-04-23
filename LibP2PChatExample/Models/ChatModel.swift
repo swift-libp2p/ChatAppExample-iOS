@@ -117,12 +117,12 @@ extension Chat {
             Message("Hey! How's it going?", type: .received),
             Message("Pretty good! How've you been??", type: .sent),
             Message("That's awesome! Have you seen any movies lately?", type: .received),
-            Message("Yeah! I just saw Encanto! Such a fun hearted film!", type: .sent),
-            Message("OOOO, I shoudl definitely check it out", type: .received),
+            Message("Yeah! I just saw Encanto! Such a fun film!", type: .sent),
+            Message("OOOO, I should definitely check it out", type: .received),
             Message("I also want to the see the new Top Gun! 🛩😎", type: .received),
             Message("Heck Yes! Let's go!", type: .sent),
-            Message("You free friday?", type: .sent),
-            Message("Sure am! see ya there!", type: .received),
+            Message("You free Friday?", type: .sent),
+            Message("Sure am! See ya there!", type: .received),
             Message("Gotta go though! Goodbye 👋", type: .received)
         ]
     )
