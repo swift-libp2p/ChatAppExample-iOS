@@ -20,7 +20,9 @@ The app uses mDNS to automatically discover other libp2p peers on the same Local
 
 ## Why?
 
-It's an example of how you can integrate swift-libp2p into an iOS App! 🥳
+It's an example of how you can integrate swift-libp2p into an iOS App! 🥳 
+
+The entire app, UI and LibP2P stack (mDNS, TCP, MPLEX, Noise), consumes less than 40mb of ram! 🍃 
 
 ## Try it out
 
